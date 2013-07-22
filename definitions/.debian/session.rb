@@ -20,7 +20,9 @@ DEBIAN_SESSION =
                            '<Enter>'
                          ],
                          :os_type_id => 'Debian_64',
-                         :postinstall_files => [ "update.sh",
+                         :postinstall_files => [
+                                                 "update.sh",
+                                                 "chef-client.sh",
                                                  "vagrant.sh",
                                                  "sshd.sh",
                                                  "networking.sh",

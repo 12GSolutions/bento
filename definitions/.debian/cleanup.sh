@@ -1,5 +1,8 @@
 #!/bin/bash -eux
 
+# Remove the CD-rom line
+sudo sed -i.backup 's/.*cdrom.*//g' /etc/apt/sources.list
+
 apt-get -y autoremove
 apt-get -y clean
 rm -rf VBoxGuestAdditions_*.iso VBoxGuestAdditions_*.iso.?
